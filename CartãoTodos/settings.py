@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-z7@8f@(t$)gensr$w%b8=o5@&#x7#-2e+#*3mg1h50%)ma@g6l
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app']
 
 
 # Application definition
@@ -69,7 +69,9 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'CartãoTodos.wsgi.application'
+# WSGI_APPLICATION = 'CartãoTodos.wsgi.application'
+
+WSGI_APPLICATION = 'CartãoTodos.wsgi.app'
 
 
 # Database
